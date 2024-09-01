@@ -1,0 +1,16 @@
+.main-container {
+    background-color: blueviolet;
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 100vw;
+}
+
+.sub-container {
+    background-color: black;
+    position: sticky;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    left: 20px;
+}

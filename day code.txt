@@ -1,0 +1,344 @@
+basic webpage
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+position html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="sub-container"></div>
+    </div>
+</body>
+</html>
+
+animation.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animation.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="animated-box"></div>
+</body>
+</html>
+
+
+csssss
+
+animation css
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    animation: moveBox 2s infinite alternate;
+}
+
+@keyframes moveBox {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+
+position css
+
+.main-container {
+    background-color: blueviolet;
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 100vw;
+}
+
+.sub-container {
+    background-color: black;
+    position: sticky;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    left: 20px;
+}
+
+
+style.css
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background-color: #333;
+    color: white;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+animation------------------
+
+    <h1 class="fading-text">Hello, World!</h1>
+    <div class="ball"></div>
+    <div class="gradient-box"></div>
+
+
+css
+
+.gradient-box {
+    width: 500px;
+    height: 500px;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, purple, orange);
+    color: white;
+}
+
+.fading-text {
+    font-size: 3em;
+    animation: fadeInOut 3s infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-150px);
+    }
+}
+
+
